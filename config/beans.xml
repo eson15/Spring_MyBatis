@@ -47,7 +47,8 @@
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
 	 -->
-	 
+	
+	<!-- 批量扫描包，扫描到的mapper生成的代理对象的id为mapper类名首字母小写 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="ssm.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
